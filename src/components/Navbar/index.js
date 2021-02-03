@@ -26,7 +26,7 @@ const Navbar = ( {toggle} ) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/" onClick={toggleHome}>
-                        <NavLogoImg src='/images/logo-2.png' alt='Ramirez Family Child Care'></NavLogoImg>
+                        <NavLogoImg src='/images/logo.png' alt='Ramirez Family Child Care'></NavLogoImg>
                     </NavLogo>
                     <MobileIcon onClick={toggle} >
                         <FaBars />
