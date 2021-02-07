@@ -24,7 +24,7 @@ const HeroSection = () => {
     return (
         <HeroContainer id='home'>
             <HeroBg>
-                <ImgBg   src= {'/images/hero-2.svg'} />
+                <ImgBg   src= {'/'} />
             </HeroBg>
             <HeroContent>
             <HeroH1> Home Away From Home </HeroH1>

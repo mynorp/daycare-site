@@ -1,25 +1,22 @@
+import React from 'react';
+
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import Home from './pages';
+import CalendarPage from './pages/calendar';
 
 
-import React, {useState } from 'react';
-import Navbar from './components/navbar';
-import Sidebar from './components/sidebar';
 
 
 
 function App() {
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-      setIsOpen(!isOpen);
-  };
-
   return (
     <Router>
-      <Navbar isOpen={isOpen} toggle={toggle} />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Switch>
+         <Route path='/' component={Home} exact />
+         <Route path='/calendar' component={CalendarPage} exact />
+       </Switch>
     </Router>
   );
 }

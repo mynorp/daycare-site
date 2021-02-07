@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll'; //created the links and linkr aliases so that we could use both 
 
 export const Nav =  styled.nav`
-    background: #EC9600;
+    background: #33ffff;
     height: 80px;
 
     display: flex;
@@ -46,8 +46,8 @@ export const NavLogo = styled(LinkR)`
 `;
 
 export const NavLogoImg = styled.img`
-    margin-top:6rem;
-    width:10rem;
+
+    width:5rem;
     
 `;
 
@@ -96,15 +96,15 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
 
-    &:hover {
-        background: #e83e36; 
+    /* &:hover {
+        background: #ff3333; 
 
 
 
-    }
+    } */
 
-    &:active{
-        margin-bottom:3px solid #e83e36;
+    &:hover{
+        margin-bottom:3px solid #ff3333;
     }
 `;
 

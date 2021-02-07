@@ -8,4 +8,4 @@ const CalendarPage = () => {
     )
 }
 
-export default SigninPage;
+export default CalendarPage;
